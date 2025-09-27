@@ -1,10 +1,36 @@
+@font-face {
+    font-family: 'One Piece';
+    src: url('ONE_PIECE.otf');
+}
+
+@font-face {
+    font-family: 'ILearnFromWall';
+    src: url('ILearnFromWall-Regular.otf');
+}
+
+body {
+    background-color: #001016;
+    overflow-x: hidden;
+    color: whitesmoke;
+    font-family: 'One Piece';
+    font-size: 70px;
+    text-align: center;
+}
+
 #main {
-    width: 600px;
-    height: 300px;
+    max-width: 900px;
+    min-width: 500px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: blueviolet;
+    background-color: #2B1356;
+    padding: 15px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #F6EF0D;
+    flex-basis: 100%;
+    padding-bottom: 65px;
 }
 
 #main .row {
@@ -12,9 +38,31 @@
     align-self: center;
     display: flex;
     justify-content: center;
+    margin: 15px;
+    
 }
 
 #socials {
     display: flex;
-    flex-basis: 50%;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    font-family: 'ILearnFromWall';
+    font-size: 5vmin;
+}
+
+.container {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#twins {
+    position: relative;
+    min-width: 90vw;
+    top: -10vh;
+}
+
+a {
+    color: #F7DF84;
 }
